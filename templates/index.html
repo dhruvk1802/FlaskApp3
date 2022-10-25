@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER INFORMATION</title>
+    <style>
+        body{
+            background-color: yellowgreen;
+            background-image: url("https://media.istockphoto.com/vectors/user-profile-icon-futuristic-digital-abstract-blue-background-vector-id1180385252?k=20&m=1180385252&s=170667a&w=0&h=_y3fvG5VkYeYO8nC9O1HAttj-ZPKsQ-82SujDNEDPiw=");
+            background-repeat: no-repeat ;
+            background-size: cover;
+            font-size: large;
+            text-align: center; 
+           
+        }
+        label{
+            display:inline-table;
+            width: 150px;
+            text-align: center;
+            
+            
+            
+        }
+        input {
+            text-align: center;
+            padding: 5px 10px;
+            text-emphasis-color: white;
+        }
+        button {
+            border: 5px;
+            display: inline-block;
+            marker: none;
+            padding:15px 15px;
+            font-size: large;
+
+        }
+        butt1 {
+            display: block;
+            width: 115px;
+            height: 25px;
+            background: #4E9CAF;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            line-height: 25px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color:red;">USER INFORMATION</h1>
+    <h3 style="text-align: center;color:whitesmoke;">ENTER THE DETAILS</h3>
+    <form action="" method="post">
+        <ul>
+            
+                <label  style="color:white"  for="fName">FIRST NAME: </label>
+                <input type="text" id="name" name="firstName"><br>       
+           
+                <label style="color:white"  for="lName" >LAST NAME:</label>
+                <input type="text" id="name" name="lastName" ><br>       
+            
+            
+                <label style="color:white" for="email">EMAIL ID:</label>
+                <input type="email" id="email" name="email"><br>       
+            
+                
+                <label style="color:white" for="Name">PHONE NUMBER:</label>
+                <input type="text" name="phoneNumber"> 
+                     
+            </li>
+        </ul>
+        
+            <button>Submit</button>
+            <!-- <button href="/users">view</button> -->
+
+            <button><a href="{{url_for('users')}}" class="button" role="button" aria-pressed="true">View</a></button>
+
+        
+    </form>
+    <!-- <script>
+        let form = document.getElementsByTagName("form")[0];
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          alert("Form Submitted Sucessfully!");
+        });
+    </script> -->
+</body>
+</html
